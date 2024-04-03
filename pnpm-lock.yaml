@@ -215,8 +215,8 @@ importers:
         version: 0.3.8
     devDependencies:
       '@azure/functions':
-        specifier: ^3.5.1
-        version: 3.5.1
+        specifier: ^4.4.0
+        version: 4.4.0
       '@azure/static-web-apps-cli':
         specifier: ^1.1.7
         version: 1.1.7
@@ -523,12 +523,13 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /@azure/functions@3.5.1:
-    resolution: {integrity: sha512-6UltvJiuVpvHSwLcK/Zc6NfUwlkDLOFFx97BHCJzlWNsfiWwzwmTsxJXg4kE/LemKTHxPpfoPE+kOJ8hAdiKFQ==}
+  /@azure/functions@4.4.0:
+    resolution: {integrity: sha512-debidWolFTsfapsK53ftzLtXJc3dbYYPc9UqJoEm1GAj1lS7jFMARQnbfTQPDqBIhuJxLZ9D8WVvhIEV7Hifzw==}
+    engines: {node: '>=18.0'}
     dependencies:
-      iconv-lite: 0.6.3
+      cookie: 0.6.0
       long: 4.0.0
-      uuid: 8.3.2
+      undici: 6.9.0
     dev: true
 
   /@azure/identity@3.4.2:
@@ -3674,6 +3675,11 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
+  /cookie@0.6.0:
+    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
+    engines: {node: '>= 0.6'}
+    dev: true
+
   /core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: false
@@ -5700,13 +5706,6 @@ packages:
 
   /iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      safer-buffer: 2.1.2
-    dev: true
-
-  /iconv-lite@0.6.3:
-    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
     dependencies:
       safer-buffer: 2.1.2
